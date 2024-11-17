@@ -1,0 +1,143 @@
+.report-container {
+    display: flex;
+    align-items: center;
+    background-color: #002b7a; /* Background color */
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between; /* Ensure spacing between content */
+}
+
+.report-content {
+    flex: 1;
+    min-width: 280px; /* Ensures it doesn't shrink too small on small screens */
+    margin-bottom: 20px;
+}
+
+.report-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.view-details-button {
+    
+    padding: 10px 20px;
+    background-Color: #007bff;
+
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:250px;
+    
+}
+
+.view-details-button:hover {
+    background-color:#1f86f5 ;
+
+}
+
+.report-image img {
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+}
+
+.key-links {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.key-links h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.key-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block; /* Makes links stack vertically */
+    margin-bottom: 8px;
+}
+
+.key-links a:hover {
+    text-decoration: underline;
+}
+
+.arrow {
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .report-container {
+        flex-direction: column; /* Stack elements vertically on medium screens */
+        align-items: flex-start;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .report-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .key-links h3 {
+        font-size: 1rem;
+    }
+
+    .view-details-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .report-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .report-content h2 {
+        font-size: 1rem;
+    }
+
+    .key-links h3 {
+        font-size: 0.75rem;
+    }
+
+    .view-details-button {
+       
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        width:175px;
+    }
+}
+
+@media (max-width: 480px) {
+    .report-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .report-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .key-links h3 {
+        font-size: 1rem;
+    }
+
+    .view-details-button {
+        
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        width:175px;
+    }
+}

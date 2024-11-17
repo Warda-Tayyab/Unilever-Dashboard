@@ -1,0 +1,299 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #003399; /* Dark blue */
+  color: white;
+  position: relative;
+}
+
+.navbar-left .logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 20px;
+  gap: 15px;
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #FFDD00; /* Yellow color on hover */
+}
+
+/* Dropdown Toggle Arrow */
+.sustainability-link,
+.investor-relations-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  margin-left: 0px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.up {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Styling */
+.sustainability-dropdown,
+.investor-dropdown {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #003399; /* Dark blue */
+  color: white;
+  min-width: 100%; /* Full width of the dropdown */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* Show dropdown when active */
+.sustainability-link.active .sustainability-dropdown,
+.investor-relations-link.active .investor-dropdown {
+  display: flex;
+}
+
+/* Dropdown Content Section */
+.sustainability-content,
+.investor-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sustainability-item,
+.investor-item {
+  width: 180px;
+  text-align: center;
+}
+
+.sustainability-item img,
+.investor-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sustainability-item p,
+.investor-item p {
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+/* View Button for Dropdown */
+.view-sustainability,
+.view-investor {
+  background-color: #40CFFF; /* Light blue color */
+  color: #003399;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.view-sustainability:hover,
+.view-investor:hover {
+  background-color: #FFDD00;
+  color: #003399;
+}
+
+/* Right Side Navbar Buttons */
+.navbar-right .location-button,
+.navbar-right .search-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-right .location-button:hover,
+.navbar-right .search-button:hover {
+  color: #FFDD00;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.close-icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #003399;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar-right .location-button {
+    display: none; /* Hides the "Unilever Pakistan" button on small screens */
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 0; /* Ensures the hamburger menu aligns to the right edge */
+  }
+
+  /* Hide "Unilever For Pakistan" and other text links on small screens */
+  .sustainability-links a:first-child,
+  .investor-links a:first-child {
+    display: none;
+  }
+
+  /* Dropdown container adjustments */
+  .sustainability-dropdown,
+  .investor-dropdown {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    width: 100%; /* Full width */
+    padding: 15px; /* Adjust padding */
+    position: static; /* Avoid clipping outside the mobile view */
+    box-shadow: none; /* Remove any shadow effects */
+  }
+
+  .sustainability-content,
+  .investor-content {
+    flex-direction: column; /* Vertical stacking */
+    gap: 15px;
+  }
+
+  .sustainability-item,
+  .investor-item {
+    width: 100%; /* Stretch to fit mobile view */
+    text-align: left; /* Align text for better readability */
+  }
+
+  .sustainability-item img{
+   
+  width: 30%; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+}
+  .investor-item img {
+    width: 60%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+
+  .view-sustainability,
+  .view-investor {
+    width: 50%; /* Button spans full width */
+    text-align: center;
+  }
+}
+
+/* Fine-tuning for smaller text sizes */
+@media (max-width: 480px) {
+  .nav-links a,
+  .sustainability-item p,
+  .investor-item p {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+
+  .view-sustainability
+  {
+    padding: 8px 15px; /* Reduce button padding */
+    font-size: 14px;
+  }
+  .view-investor {
+    padding: 8px 15px; /* Reduce button padding */
+    font-size: 14px; /* Smaller font for buttons */
+  }
+}
+
+
+.back-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px; /* Base font size */
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px 15px; /* Added padding for better tap target */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+  border-radius: 5px; /* Rounded corners */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  color: #FFDD00; /* Yellow hover effect */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.back-button:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 4px 2px #FFDD00; /* Add focus ring for better visibility */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px 12px; /* Reduced padding */
+    gap: 4px; /* Tighter spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    font-size: 12px; /* Smaller font size for very small screens */
+    padding: 6px 10px; /* Compact padding */
+  }
+}

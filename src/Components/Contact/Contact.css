@@ -1,0 +1,172 @@
+.contact-footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+  }
+  
+  .share-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002080; /* Dark blue background */
+    padding: 20px;
+    margin-bottom: 40px;
+    color: white;
+    gap: 15px;
+  }
+  
+  .share-section span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .share-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .share-icon {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .share-icon:hover {
+    color: #add8e6; /* Light blue on hover */
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .contact-section {
+    width: 45%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .connect-section h2,
+  .contact-info-section h2 {
+    font-size: 24px;
+    color: #2b4cd5;
+    font-weight: bold;
+  }
+  
+  .connect-section p,
+  .contact-info-section p {
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 1.5;
+  }
+  
+  .contact-social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    color: #8a2be2;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .contact-icon:hover {
+    color: #2b4cd5;
+  }
+  
+  .contact-button {
+   
+    padding: 10px 20px;
+    background-Color: #007bff;
+
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:250px;
+  }
+  
+  .contact-button:hover {
+    background-color:#1f86f5 ;
+  }
+  
+  .contact-arrow {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .contact-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-social-icons {
+      justify-content: center;
+    }
+  
+    .contact-button {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .connect-section h2,
+    .contact-info-section h2 {
+      font-size: 20px;
+    }
+  
+    .connect-section p,
+    .contact-info-section p {
+      font-size: 14px;
+    }
+  
+    .contact-button {
+      
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      width:175px;
+    }
+  
+    .share-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-icon {
+      font-size: 20px;
+    }
+  
+    .contact-arrow {
+      font-size: 16px;
+    }
+  
+    .contact-button {
+      
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      width:175px;
+    }
+  
+    .share-icon {
+      font-size: 16px;
+    }
+  }
+  

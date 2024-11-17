@@ -1,0 +1,131 @@
+/* News Page Styles */
+.news-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.news-image {
+  width: 100%;
+  height: 60vh; /* Adjust height as needed */
+  max-height: 500px; /* Ensure it doesn't grow too tall */
+  overflow: hidden;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content {
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.news-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.news-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.news-articles {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.news-articles article {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-articles h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.news-articles p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.news-articles a {
+  font-size: 1.1rem;
+  color: #0056FF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.news-articles a:hover {
+  color: #FFDD00; /* Yellow hover effect */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .news-content {
+    margin-top: 0rem;
+  }
+  .news-page {
+    padding: 1rem;
+  }
+
+  .news-image {
+    height: 40vh; /* Slightly smaller for mobile */
+  }
+
+  .news-content h1 {
+    font-size: 2rem;
+  }
+
+  .news-content p {
+    font-size: 1rem;
+  }
+
+  .news-articles article {
+    padding: 1rem;
+  }
+
+  .news-articles h2 {
+    font-size: 1.6rem;
+  }
+
+  .news-articles p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .news-content {
+    margin-top: 0rem;
+  }
+  .news-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .news-content p {
+    font-size: 0.9rem;
+  }
+
+  .news-articles h2 {
+    font-size: 1.4rem;
+  }
+
+  .news-articles p {
+    font-size: 0.9rem;
+  }
+}

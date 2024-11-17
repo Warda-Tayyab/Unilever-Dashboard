@@ -1,0 +1,171 @@
+/* General Styling for the main search page */
+.search-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-header .search-logo {
+  max-width: 80px;
+  margin-top: 20px;
+}
+
+.search-main-content {
+  margin-top: 40px;
+}
+
+.search-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jama-punji-logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.jama-punji-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-bar-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.search-heading {
+  font-size: 1.5em;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background-color: #0056b3;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button .search-icon {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .search-input {
+    width: 250px; /* Adjust input width for larger tablets */
+    padding: 9px;
+  }
+
+  .jama-punji-logo {
+    max-width: 100px; /* Reduce logo size on larger tablets */
+  }
+
+  .search-heading {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 220px; /* Adjust input width for smaller tablets */
+    padding: 8px;
+  }
+
+  .jama-punji-logo {
+    max-width: 90px; /* Further reduce logo size for tablets */
+  }
+
+  .search-heading {
+    font-size: 1.3em;
+  }
+
+  .search-button .search-icon {
+    font-size: 1.1em; /* Slightly smaller icon */
+  }
+}
+
+@media (max-width: 576px) {
+  .search-page {
+    padding: 10px;
+  }
+
+  .search-input-wrapper {
+    flex-direction: row; /* Stack the input and button vertically */
+    width: 100%; /* Ensure full width */
+  }
+
+  .search-input {
+    width: 100%; /* Full width on small screens */
+    padding: 10px;
+    
+   
+  }
+
+  .search-button {
+    
+    padding: 12px;
+    border-radius: 0 ; /* Rounded bottom corners */
+  }
+
+  .jama-punji-button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+
+  .search-heading {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .search-input {
+    width: 100%;
+    padding: 8px;
+  }
+  
+
+  .jama-punji-logo {
+    max-width: 80px; /* Reduce logo size even further for small devices */
+  }
+
+  .search-heading {
+    font-size: 1.1em; /* Make heading smaller for tiny screens */
+  }
+
+  .jama-punji-button {
+    padding: 5px 10px; /* Smaller button for mobile screens */
+    font-size: 0.8em;
+  }
+
+  .search-button .search-icon {
+    font-size: 1em; /* Adjust icon size */
+  }
+}

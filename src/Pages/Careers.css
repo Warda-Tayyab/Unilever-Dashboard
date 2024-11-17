@@ -1,0 +1,102 @@
+/* Careers Page Styles */
+.careers-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .careers-image {
+    width: 100%;
+    height: 60vh; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .careers-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the space proportionally */
+  }
+  
+  .careers-content {
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 900px;
+    padding: 1rem;
+  }
+  
+  .careers-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .careers-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .careers-list {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .career-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .career-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .career-item p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .career-item a {
+    font-size: 1.1rem;
+    color: #0056FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .career-item a:hover {
+    color: #FFDD00; /* Yellow hover effect */
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .careers-page {
+      padding: 1rem;
+    }
+  
+    .careers-image {
+      height: 50vh;
+    }
+  
+    .careers-content h1 {
+      font-size: 2rem;
+    }
+  
+    .career-item {
+      padding: 1rem;
+    }
+  
+    .career-item h3 {
+      font-size: 1.6rem;
+    }
+  
+    .career-item p {
+      font-size: 1rem;
+    }
+  }
+  
